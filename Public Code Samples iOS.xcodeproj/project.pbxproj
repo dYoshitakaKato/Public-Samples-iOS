@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EF87E7122320802002333DE /* KudanAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF87E7022320802002333DE /* KudanAR.framework */; };
 		66200D931EE07C9300A23776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66200D921EE07C9300A23776 /* main.m */; };
 		66200D961EE07C9300A23776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66200D951EE07C9300A23776 /* AppDelegate.m */; };
 		66200D9C1EE07C9300A23776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66200D9A1EE07C9300A23776 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EF87E7022320802002333DE /* KudanAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KudanAR.framework; sourceTree = "<group>"; };
 		66200D8E1EE07C9300A23776 /* Public Code Samples iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Public Code Samples iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66200D921EE07C9300A23776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66200D941EE07C9300A23776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66200DAD1EE07D2100A23776 /* libc++.tbd in Frameworks */,
+				3EF87E7122320802002333DE /* KudanAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +110,7 @@
 		66200D901EE07C9300A23776 /* Public Code Samples iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3EF87E7022320802002333DE /* KudanAR.framework */,
 				66200D941EE07C9300A23776 /* AppDelegate.h */,
 				66200D951EE07C9300A23776 /* AppDelegate.m */,
 				66200DB61EE085A400A23776 /* TitleViewController.h */,
@@ -266,6 +270,7 @@
 				TargetAttributes = {
 					66200D8D1EE07C9300A23776 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8KP4HEKJWM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -377,6 +382,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -393,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,6 +432,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -436,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,15 +456,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KP4HEKJWM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Public\\ Code\\ Samples\\ iOS",
 				);
 				INFOPLIST_FILE = "Public Code Samples iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.kudan.ar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsoft.publicsamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -469,15 +477,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KP4HEKJWM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Public\\ Code\\ Samples\\ iOS",
 				);
 				INFOPLIST_FILE = "Public Code Samples iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.kudan.ar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsoft.publicsamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
