@@ -465,7 +465,7 @@
 				);
 				INFOPLIST_FILE = "Public Code Samples iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.kudan.ar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsoft.publicsamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -486,7 +486,7 @@
 				);
 				INFOPLIST_FILE = "Public Code Samples iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eu.kudan.ar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsoft.publicsamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
