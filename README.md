@@ -1,12 +1,15 @@
 # Public-Samples-iOS
-[Japanese README is here](./README_jp.md)
 
-A demonstration of some of the features of the Kudan iOS SDK
+[English README is here](./README_en.md)
 
-## Instructions
-- Download the Kudan AR iOS SDK here: https://www.xlsoft.com/en/products/kudan/download.html
-- Drop the `KudanAR.framework` into your project
-- Run the XCode project
+Kudan AR iOS SDK の機能のデモンストレーション
 
-If you have any feedback about our SDK or provided sample source code, please get in touch with us at [our support site](https://www.xlsoft.com/doc/kudan/getting-started/). 
+## 利用方法
 
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=Public-Samples-iOS) から最新の Kudan AR iOS SDK のダウンロードをお申し込みください。
+- `KudanAR.framework` をプロジェクト フォルダーにコピーまたは移動します。
+- ビルドして実行します。
+
+## エクセルソフトについて
+
+エクセルソフトは Kudan AR/CV SDK の販売代理店です。ライブラリに関するお問い合わせ、価格に関するお問い合わせはお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=Public-Samples-iOS) よりお寄せ下さい。
