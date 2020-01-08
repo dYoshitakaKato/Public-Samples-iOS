@@ -6,7 +6,7 @@ Kudan AR iOS SDK の機能のデモンストレーション
 
 ## 利用方法
 
-- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=external&utm_medium=github_xlsoft&utm_campaign=Public-Samples-iOS) から最新の Kudan AR iOS SDK のダウンロードをお申し込みください。
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=external&utm_medium=github&utm_campaign=xlsoft_Public-Samples-iOS) から最新の Kudan AR iOS SDK のダウンロードをお申し込みください。
 - `KudanAR.framework` をプロジェクト フォルダーにコピーまたは移動します。
 - ビルドして実行します。
 
@@ -20,4 +20,4 @@ Kudan AR iOS SDK の機能のデモンストレーション
 - ライブラリの使い方を知りたい
 - 価格を知りたい
 
-などのご相談はお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=external&utm_medium=github_xlsoft&utm_campaign=Public-Samples-iOS) よりお寄せ下さい。
+などのご相談はお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=external&utm_medium=github&utm_campaign=xlsoft_Public-Samples-iOS) よりお寄せ下さい。
