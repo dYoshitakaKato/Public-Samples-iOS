@@ -270,7 +270,7 @@
 				TargetAttributes = {
 					66200D8D1EE07C9300A23776 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8KP4HEKJWM;
+						DevelopmentTeam = 5Y4T3H2CPQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -442,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8KP4HEKJWM;
+				DEVELOPMENT_TEAM = 5Y4T3H2CPQ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8KP4HEKJWM;
+				DEVELOPMENT_TEAM = 5Y4T3H2CPQ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
