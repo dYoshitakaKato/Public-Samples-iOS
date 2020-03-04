@@ -7,7 +7,7 @@
 //
 
 /*
- 
+
  This class is a demonstration of a simple marker tracking set up. We create a marker, add it to our ARImageTrackerManager, and then add an image node of the Kudan logo to the trackable. We also create a UILabel and update it to reflect the change in tracking status.
 */
 
@@ -25,35 +25,81 @@
 // This method should be overridden and all of the AR content setup placed within it
 // This method is called only at the point at which the AR Content is ready to be set up
 
+- (void)loadView{
+	[super loadView];
+	NSLog(@"MarkerViewController:loadView");
+}
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	NSLog(@"MarkerViewController:viewDidLoad");
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+	[super viewWillDisappear:animated];
+	if (isSegue) {
+		ARCameraView *view = [[ARCameraView alloc] initWithFrame:CGRectMake(0,
+			0, self.view.bounds.size.width, self.view.bounds.size.height)];
+			[[self view] addSubview:view];
+			[self setCameraView:view];
+		[self.cameraView resume];
+	}
+	isSegue = false;
+	NSLog(@"MarkerViewController:viewWillDisappear");
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+	NSLog(@"MarkerViewController:viewWillAppear");
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+	[super viewDidAppear:animated];
+	NSLog(@"MarkerViewController:viewDidAppear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+	[super viewDidDisappear:animated];
+//	[self.cameraView pause];
+	NSLog(@"MarkerViewController:viewDidDisappear");
+}
+
+- (void)dealloc
+{
+	NSLog(@"MarkerViewController:dealloc");
+}
+
 - (void)setupContent
 {
+	NSLog(@"MarkerViewController:setupContent");
     // Create the image trackable and add it to the image tracker manager
     ARImageTrackable *legoTrackable = [self createTrackableWithImageNamed:@"Lego Marker Image" andName:@"Lego Marker"];
-    
+
     // Create image node to add to trackable
     ARImageNode *cowNode = [[ARImageNode alloc] initWithImage:[UIImage imageNamed:@"Kudan Cow"]];
-    
+
     // Add target-action pairs for various tracking events
     [self addTrackingTargetsForTrackable:legoTrackable];
-    
+
     // Add the cow node to the trackable's world
     [legoTrackable.world addChild:cowNode];
+	[super setupContent];
 }
 
 - (ARImageTrackable *)createTrackableWithImageNamed:(NSString *)imageName andName:(NSString *)markerName
 {
     // Get the image that we want to use for our trackable
     UIImage *markerImage = [UIImage imageNamed:imageName];
-    
+
     // Create our trackable with an image and a name
     ARImageTrackable *trackable =  [[ARImageTrackable alloc] initWithImage:markerImage name:markerName];
-    
+
     // Get the tracker manager and add our newly created trackable to it
     ARImageTrackerManager *manager = [ARImageTrackerManager getInstance];
     [manager initialise];
 
     [manager addTrackable:trackable];
-    
+
     return trackable;
 }
 
@@ -61,7 +107,7 @@
 {
     // Add target-action pair for when this trackable is lost
     [trackable addTrackingEventTarget:self action:@selector(imageLost:) forEvent:ARImageTrackableEventLost];
-    
+
     // Add target-action pair for when the trackable is being tracked
     [trackable addTrackingEventTarget:self action:@selector(imageDetected:) forEvent:ARImageTrackableEventDetected];
 }
@@ -83,5 +129,12 @@
         self.trackingStatusLabel.textColor = [UIColor greenColor];
     });
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	[self.cameraView pause];
+	[self.cameraView removeFromSuperview];
+	isSegue = true;
+}
+bool isSegue = false;
 
 @end

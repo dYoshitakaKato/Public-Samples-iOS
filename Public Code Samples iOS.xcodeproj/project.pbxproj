@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C71CF424101404004F9724 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C71CF324101404004F9724 /* TestViewController.m */; };
 		3EF87E7122320802002333DE /* KudanAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF87E7022320802002333DE /* KudanAR.framework */; };
 		66200D931EE07C9300A23776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66200D921EE07C9300A23776 /* main.m */; };
 		66200D961EE07C9300A23776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66200D951EE07C9300A23776 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C71CF224101404004F9724 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		02C71CF324101404004F9724 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		3EF87E7022320802002333DE /* KudanAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KudanAR.framework; sourceTree = "<group>"; };
 		66200D8E1EE07C9300A23776 /* Public Code Samples iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Public Code Samples iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66200D921EE07C9300A23776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				66200D9F1EE07C9300A23776 /* LaunchScreen.storyboard */,
 				66200DA21EE07C9300A23776 /* Info.plist */,
 				66200D911EE07C9300A23776 /* Supporting Files */,
+				02C71CF224101404004F9724 /* TestViewController.h */,
+				02C71CF324101404004F9724 /* TestViewController.m */,
 			);
 			path = "Public Code Samples iOS";
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66200D961EE07C9300A23776 /* AppDelegate.m in Sources */,
+				02C71CF424101404004F9724 /* TestViewController.m in Sources */,
 				6631291F1EEEE9D200BAB4B5 /* MarkerlessWallViewController.m in Sources */,
 				66200DB81EE085A400A23776 /* TitleViewController.m in Sources */,
 				66200DDC1EE14CFE00A23776 /* MarkerViewController.m in Sources */,
